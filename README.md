@@ -352,26 +352,6 @@ Modülleri ayırırken şu mantığı izledim: ortam ile ajan birbirini bilmemel
 - **Tabular Q-Learning**: Daha büyük gridlerde state space patlar, function approximation gerekir.
 - **Şarj 4 banda indirgenmiş**: Daha hassas şarj kararları için bu yetmeyebilir.
 
-## Geliştirilebilecek Yönler
-
-İleride bu projeye eklenebilecek şeyler:
-
-- **DQN'e geçiş**: State'e tüm grid kirlilik haritası dahil edilebilir, neural network ile öğrenilebilir
-- **Dinamik kirlilik**: Her bölümde kirlilik dağılımı rastgelelenebilir, robot bilinen pozisyonlara değil "kirlilik desenlerine" göre öğrenir
-- **Multi-agent**: Birden fazla robot, görev paylaşımı, çakışma yönetimi
-- **Gerçek mağaza haritası**: 5x5 yerine reel ölçekli, gerçek raf yerleşimleri olan bir grid
-- **Sensör gürültüsü**: Robotun gözlemine gürültü ekleyerek POMDP modellemesi
-- **Daha gelişmiş RL algoritmaları**: SARSA, Double Q-Learning, ya da policy-based yöntemler (REINFORCE, PPO)
-
-## Kullanılan Teknolojiler
-
-- **Python 3.9+**
-- **NumPy** → Q-Table ve sayısal hesaplamalar
-- **Matplotlib** → grafikler ve grid render
-- **ImageIO** → GIF üretimi
-
-Hepsi `requirements.txt` içinde, `pip install -r requirements.txt` ile kuruluyor.
-
 ## Sonuç
 
 Bu projede pekiştirmeli öğrenmenin pratik bir uygulamasını yapmaya çalıştım. Q-Learning gibi basit bir algoritmanın bile, doğru state ve reward tasarımı ile karmaşık görünen kararları (kirlilik önceliği, şarj yönetimi, verimli yol planlama) öğrenebildiğini gördüm.
